@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: elevator_platform_development
+
+ 
+test:
+  <<: *default
+  database: elevator_platform_test
+
+
+production:
+  <<: *default
+  database: elevator_platform_production
+  username: elevator_platform
+  password: <%= ENV["ELEVATOR_PLATFORM_DATABASE_PASSWORD"] %>
