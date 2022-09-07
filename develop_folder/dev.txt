@@ -1,0 +1,67 @@
+data"{
+      "goods":[
+         {
+            "name":"screw spiral 75/27/75 S-3 right",
+            "goods_group":"goods group",
+            "parametrs":{
+               "vd":75,
+               "d":27,
+               "p":75,
+               "s":3,
+               "naviv":"right",
+               "price_rodr":380,
+               "price_opt":280,
+               "on_sklad":22,
+               "sklad-position":"sklad-position"
+            },
+            "caunt":3,
+            "price":382,
+            "totall_price":1146
+         },
+         {
+            "name":"screw spiral 75/27/75 S-3 right",
+            "goods_group":"goods group",
+            "parametrs":{
+               "vd":75,
+               "d":27,
+               "p":75,
+               "s":3,
+               "naviv":"right",
+               "price_rodr":380,
+               "price_opt":280,
+               "on_sklad":22,
+               "sklad-position":"sklad-position"
+            },
+            "caunt":3,
+            "price":382,
+            "totall_price":1146
+         }
+      ],
+      "client":{
+         "name":"Sapko Viktor",
+         "Organization":{
+            "name":"KMZ",
+            "adress":"Kharkiv Father striit 6a",
+            "edrpou":"555555",
+            "email":"example@gmail.com"
+         },
+         "tel":"0965554433",
+         "email":"example@gmail.com",
+         "adress_np":"Kharki NP #6"
+      },
+      "sender":{         
+      },
+      "manager":{
+         "name":"delineko",
+         "id":1
+      },
+      "type_payments":{
+         "type":1,
+         "bn_payments":{
+            "document":"Rahunok #258 vid 25.05.2022"
+         },
+         "nalozh":"2292",
+         "on_kard":"2292"
+      },
+      "status_zakaz":1
+   }
