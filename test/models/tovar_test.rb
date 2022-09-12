@@ -1,6 +1,6 @@
 require "test_helper"
 
-class SendTest < ActiveSupport::TestCase
+class TovarTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
