@@ -17,7 +17,7 @@ class ContractsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create contract" do
     assert_difference("Contract.count") do
-      post contracts_url, params: { contract: { data_create: @contract.data_create, number: @contract.number } }
+      post contracts_url, params: { contract: { date_create: @contract.date_create, num: @contract.num, organization_id: @contract.organization_id } }
     end
 
     assert_redirected_to contract_url(Contract.last)
@@ -34,7 +34,7 @@ class ContractsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update contract" do
-    patch contract_url(@contract), params: { contract: { data_create: @contract.data_create, number: @contract.number } }
+    patch contract_url(@contract), params: { contract: { date_create: @contract.date_create, num: @contract.num, organization_id: @contract.organization_id } }
     assert_redirected_to contract_url(@contract)
   end
 

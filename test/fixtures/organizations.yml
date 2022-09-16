@@ -13,7 +13,7 @@ one:
   mfo: MyString
   name_and_rquesit_bank: MyString
   phone: MyString
-  mail: MyString
+  email: MyString
 
 two:
   name: MyString
@@ -28,4 +28,4 @@ two:
   mfo: MyString
   name_and_rquesit_bank: MyString
   phone: MyString
-  mail: MyString
+  email: MyString

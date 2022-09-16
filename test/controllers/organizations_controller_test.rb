@@ -17,7 +17,7 @@ class OrganizationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create organization" do
     assert_difference("Organization.count") do
-      post organizations_url, params: { organization: { adress: @organization.adress, ederpou: @organization.ederpou, factic_adress: @organization.factic_adress, ipn: @organization.ipn, mail: @organization.mail, mfo: @organization.mfo, name: @organization.name, name_and_rquesit_bank: @organization.name_and_rquesit_bank, number_caunt_bank: @organization.number_caunt_bank, phone: @organization.phone, send_adress: @organization.send_adress, short_name: @organization.short_name, type_rent: @organization.type_rent } }
+      post organizations_url, params: { organization: { adress: @organization.adress, ederpou: @organization.ederpou, email: @organization.email, factic_adress: @organization.factic_adress, ipn: @organization.ipn, mfo: @organization.mfo, name: @organization.name, name_and_rquesit_bank: @organization.name_and_rquesit_bank, number_caunt_bank: @organization.number_caunt_bank, phone: @organization.phone, send_adress: @organization.send_adress, short_name: @organization.short_name, type_rent: @organization.type_rent } }
     end
 
     assert_redirected_to organization_url(Organization.last)
@@ -34,7 +34,7 @@ class OrganizationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update organization" do
-    patch organization_url(@organization), params: { organization: { adress: @organization.adress, ederpou: @organization.ederpou, factic_adress: @organization.factic_adress, ipn: @organization.ipn, mail: @organization.mail, mfo: @organization.mfo, name: @organization.name, name_and_rquesit_bank: @organization.name_and_rquesit_bank, number_caunt_bank: @organization.number_caunt_bank, phone: @organization.phone, send_adress: @organization.send_adress, short_name: @organization.short_name, type_rent: @organization.type_rent } }
+    patch organization_url(@organization), params: { organization: { adress: @organization.adress, ederpou: @organization.ederpou, email: @organization.email, factic_adress: @organization.factic_adress, ipn: @organization.ipn, mfo: @organization.mfo, name: @organization.name, name_and_rquesit_bank: @organization.name_and_rquesit_bank, number_caunt_bank: @organization.number_caunt_bank, phone: @organization.phone, send_adress: @organization.send_adress, short_name: @organization.short_name, type_rent: @organization.type_rent } }
     assert_redirected_to organization_url(@organization)
   end
 

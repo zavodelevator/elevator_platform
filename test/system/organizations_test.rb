@@ -16,9 +16,9 @@ class OrganizationsTest < ApplicationSystemTestCase
 
     fill_in "Adress", with: @organization.adress
     fill_in "Ederpou", with: @organization.ederpou
+    fill_in "Email", with: @organization.email
     fill_in "Factic adress", with: @organization.factic_adress
     fill_in "Ipn", with: @organization.ipn
-    fill_in "Mail", with: @organization.mail
     fill_in "Mfo", with: @organization.mfo
     fill_in "Name", with: @organization.name
     fill_in "Name and rquesit bank", with: @organization.name_and_rquesit_bank
@@ -39,9 +39,9 @@ class OrganizationsTest < ApplicationSystemTestCase
 
     fill_in "Adress", with: @organization.adress
     fill_in "Ederpou", with: @organization.ederpou
+    fill_in "Email", with: @organization.email
     fill_in "Factic adress", with: @organization.factic_adress
     fill_in "Ipn", with: @organization.ipn
-    fill_in "Mail", with: @organization.mail
     fill_in "Mfo", with: @organization.mfo
     fill_in "Name", with: @organization.name
     fill_in "Name and rquesit bank", with: @organization.name_and_rquesit_bank

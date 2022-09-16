@@ -13,7 +13,7 @@ class CreateOrganizations < ActiveRecord::Migration[7.0]
       t.string :mfo
       t.string :name_and_rquesit_bank
       t.string :phone
-      t.string :mail
+      t.string :email
 
       t.timestamps
     end

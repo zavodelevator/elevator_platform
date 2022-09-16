@@ -1,2 +1,0 @@
-module PerssonsHelper
-end

@@ -1,2 +1,0 @@
-class Persson < ApplicationRecord
-end
