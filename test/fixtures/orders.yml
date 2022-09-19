@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_send: MyString
+  params_for_send: MyString
+  order_status: MyString
+  ful_price: MyString
+  notes: MyString
+
+two:
+  date_send: MyString
+  params_for_send: MyString
+  order_status: MyString
+  ful_price: MyString
+  notes: MyString

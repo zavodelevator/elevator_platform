@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_16_080352) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_19_123523) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "contracts", force: :cascade do |t|
     t.string "number"
     t.string "data_create"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string "date_send"
+    t.string "params_for_send"
+    t.string "order_status"
+    t.string "ful_price"
+    t.string "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,6 +47,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_16_080352) do
     t.string "mail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "contract_id"
+    t.index ["contract_id"], name: "index_organizations_on_contract_id"
   end
 
   create_table "perssons", force: :cascade do |t|
