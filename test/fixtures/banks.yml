@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_caunt_bank: MyString
+  mfo: MyString
+  name_and_rquesit_bank: MyString
+  oue_organization: one
+
+two:
+  number_caunt_bank: MyString
+  mfo: MyString
+  name_and_rquesit_bank: MyString
+  oue_organization: two

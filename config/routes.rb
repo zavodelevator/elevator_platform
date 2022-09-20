@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :workers
+  resources :banks
+  resources :oue_organizations
   resources :orders
   resources :contracts
   resources :perssons

@@ -10,17 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_20_103333) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "banks", force: :cascade do |t|
-    t.string "number_caunt_bank"
-    t.string "mfo"
-    t.string "name_and_rquesit_bank"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "contracts", force: :cascade do |t|
     t.string "number"
@@ -72,10 +64,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
     t.string "mail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "bank_id"
-    t.integer "worker_id"
-    t.index ["bank_id"], name: "index_oue_organizations_on_bank_id"
-    t.index ["worker_id"], name: "index_oue_organizations_on_worker_id"
   end
 
   create_table "perssons", force: :cascade do |t|
@@ -102,18 +90,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
     t.string "sklad_locate"
     t.string "params_data"
     t.string "time_on_sklad"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "workers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "rather_name"
-    t.string "name_for_contract"
-    t.string "phone"
-    t.string "email"
-    t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
