@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  resources :contracts
   resources :workers
   resources :banks
   resources :oue_organizations
   resources :orders
-  resources :contracts
   resources :perssons
   resources :organizations
   resources :tovars

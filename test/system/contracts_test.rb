@@ -14,8 +14,9 @@ class ContractsTest < ApplicationSystemTestCase
     visit contracts_url
     click_on "New contract"
 
-    fill_in "Data create", with: @contract.data_create
-    fill_in "Number", with: @contract.number
+    fill_in "Data create contract", with: @contract.data_create_contract
+    fill_in "Number contract", with: @contract.number_contract
+    fill_in "Organization", with: @contract.organization_id
     click_on "Create Contract"
 
     assert_text "Contract was successfully created"
@@ -26,8 +27,9 @@ class ContractsTest < ApplicationSystemTestCase
     visit contract_url(@contract)
     click_on "Edit this contract", match: :first
 
-    fill_in "Data create", with: @contract.data_create
-    fill_in "Number", with: @contract.number
+    fill_in "Data create contract", with: @contract.data_create_contract
+    fill_in "Number contract", with: @contract.number_contract
+    fill_in "Organization", with: @contract.organization_id
     click_on "Update Contract"
 
     assert_text "Contract was successfully updated"

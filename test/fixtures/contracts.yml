@@ -1,9 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  number: MyString
-  data_create: MyString
+  data_create_contract: MyString
+  number_contract: MyString
+  organization: one
 
 two:
-  number: MyString
-  data_create: MyString
+  data_create_contract: MyString
+  number_contract: MyString
+  organization: two

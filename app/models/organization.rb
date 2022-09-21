@@ -1,3 +1,3 @@
 class Organization < ApplicationRecord
-    # has_many :contract
+    has_many :contract
 end

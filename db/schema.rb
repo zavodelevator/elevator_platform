@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_21_065706) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,10 +23,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
   end
 
   create_table "contracts", force: :cascade do |t|
-    t.string "number"
-    t.string "data_create"
+    t.string "data_create_contract"
+    t.string "number_contract"
+    t.bigint "organization_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["organization_id"], name: "index_contracts_on_organization_id"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -55,8 +57,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
     t.string "mail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "contract_id"
-    t.index ["contract_id"], name: "index_organizations_on_contract_id"
   end
 
   create_table "oue_organizations", force: :cascade do |t|
@@ -72,10 +72,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
     t.string "mail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "bank_id"
-    t.integer "worker_id"
-    t.index ["bank_id"], name: "index_oue_organizations_on_bank_id"
-    t.index ["worker_id"], name: "index_oue_organizations_on_worker_id"
   end
 
   create_table "perssons", force: :cascade do |t|
@@ -118,4 +114,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_20_130423) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "contracts", "organizations"
 end
