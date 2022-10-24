@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Title</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="calc_sh_t.css">
+      <script> </script>
+   </head>
+   <body>
+
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item active" href="#" aria-current="page">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Inventory</a></li>
+                  <li><a class="dropdown-item" href="#">Customers</a></li>
+                  <li><a class="dropdown-item" href="#">Products</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Reports</a></li>
+                  <li><a class="dropdown-item" href="#">Analytics</a></li>
+                </ul>
+            </div>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="container-fluid pb-3">
+        <div class="d-grid gap-3" style="grid-template-columns: 1fr 5fr;">
+            <div class="bg-light border rounded-3">
+
+
+            </div>
+            <div class="bg-light rounded-3">
+                
+
+                    
+                    <div class="container" id="cont_1">
+                    
+                        <div class="card">
+                        <div class="card-header">
+                                <span>Транспортер шнековий</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+
+                            <div class="col-sm">
+                                <div class="card mb-3">
+                                <img class="card-img-top" src="/img/shnek_trans/sh_t_21_krot.jpg" alt="Card image cap">
+                                <!-- <div class="card-body">
+                                    <h5 class="card-title">Транспортер шнековий</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div> -->
+                                </div> 
+
+                                <div class="card_price">
+                                <div class="card-body">Розшифровка ціни</div>                
+                                </div>
+
+                            </div>
+
+                
+
+                            <div class="col-sm">
+
+                                <div class="form-group">
+
+
+
+
+                                <label for="params_trans">Діаметер труби шнека мм.</label>
+                                <select class="form-control" id="params_trans">
+                                    <option value="102,4050,4500,2048">102</option>
+                                    <option value="127,4116,4500,2486">127</option>
+                                    <option value="159,4512,4500,2914">159</option>
+                                    <option value="219,7350,4500,4384">219</option>
+                                    <option value="250,8000,4500,5000">250</option>
+                                    <option value="300,9000,4500,6000">300</option>
+
+                                </select>
+
+
+                                <label for="length_trans">Довжина шнека</label>
+                                <select class="form-control" id="length_trans">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    
+                                </select>
+
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input radio_boonker" type="checkbox" id="flexSwitchCheckChecked_1">
+                                    <label class="form-check-label" for="flexSwitchCheckChecked_1">Бункер</label>
+                                </div>
+
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input radio_pidstavka" type="checkbox" id="flexSwitchCheckChecked_2">
+                                    <label class="form-check-label" for="flexSwitchCheckChecked_2">Підставка</label>
+                                </div>
+
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input radio_krot" type="checkbox" id="flexSwitchCheckChecked_krot">
+                                    <label class="form-check-label" for="flexSwitchCheckChecked_krot">Крот</label>
+                                </div>
+                                
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input radio_zholob" type="checkbox" id="flexSwitchCheckChecked_zholob">
+                                    <label class="form-check-label" for="flexSwitchCheckChecked_zholob">Жолоб</label>
+                                </div>
+
+                                <br>
+                                <br>
+                                <h6>Тип Двигуна</h6> <span class="need_engyne" style="float: right;"></span>
+
+                                <input class="form-check-input form-check-input_engyne" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Двигун
+                                </label>
+
+                                <input class="form-check-input input_two form-check-input_engyne form-check-input_motor_engyne" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+                                <label class="form-check-label label_two" for="exampleRadios2">
+                                    Мотор редуктор
+                                </label>
+                                
+
+
+                                <select class="form-control" id="engine_params">
+                                    <option selected value="0,0,0">Без двигуна</option>
+                                    <option value="1500,1.1,3237">Мотор 1.1 кВт. 1500 об./хв.</option>
+                                    <option value="1500,1.5,3582">Мотор 1.5 кВт. 1500 об./хв.</option>
+                                    <option value="1500,2.2,5448">Мотор 2.2 кВт. 1500 об./хв.</option>
+                                    <option value="1500,3.0,6306">Мотор 3.0 кВт. 1500 об./хв.</option>
+                                    <option value="1500,4.0,7161">Мотор 4.0 кВт. 1500 об./хв.</option>
+                                    <option value="1500,5.5,8778">Мотор 5.5 кВт. 1500 об./хв.</option>
+                                    <option value="1500,7.5,11421">Мотор 7.5 кВт. 1500 об./хв.</option>
+                                    <option value="1500,11.0,14145">Мотор 11.0 кВт. 1500 об./хв.</option>
+                                    <option value="1000,1.1,3747">Мотор 1.1 кВт. 1000 об./хв.</option>
+                                    <option value="1000,1.5,5115">Мотор 1.5 кВт. 1000 об./хв.</option>
+                                    <option value="1000,2.2,6045">Мотор 2.2 кВт. 1000 об./хв.</option>
+                                    <option value="1000,3.0,8352">Мотор 3.0 кВт. 1000 об./хв.</option>
+                                    <option value="1000,4.0,8946">Мотор 4.0 кВт. 1000 об./хв.</option>
+                                    <option value="1000,5.5,12015">Мотор 5.5 кВт. 1000 об./хв.</option>
+                                    <option value="1000,7.5,13884">Мотор 7.5 кВт. 1000 об./хв.</option>
+                                    <option value="1000,11.0,20136">Мотор 11.0 кВт. 1000 об./хв.</option>
+                                    <option value="750,1.1,5448">Мотор 1.1 кВт. 750 об./хв.</option>
+                                    <option value="750,1.5,6390">Мотор 1.5 кВт. 750 об./хв.</option>
+                                    <option value="750,2.2,8517">Мотор 2.2 кВт. 750 об./хв.</option>
+                                    <option value="750,3.0,9375">Мотор 3.0 кВт. 750 об./хв.</option>
+                                    <option value="750,4.0,12183">Мотор 4.0 кВт. 750 об./хв.</option>
+                                    <option value="750,5.5,13716">Мотор 5.5 кВт. 750 об./хв.</option>
+                                    <option value="750,7.5,19056">Мотор 7.5 кВт. 750 об./хв.</option>
+                                    <option value="750,11.0,23370">Мотор 11.0 кВт. 750 об./хв.</option>
+                                    
+                                </select>
+
+                                <br/>
+                                <hr/>
+
+                                <button type="button" id="calck_price" class="btn btn-dark" >Розрахувати</button>
+                                
+                                <br/>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-borderless mb-0">
+                                    <tbody>
+                                        <tr>
+                                        <th class="pl-0 w-25" scope="row"><strong>Ціна</strong></th>
+                                        <td> <p>
+                                                <span class="mr-3">
+                                                    <strong>
+                                                    <span class="price">
+                                                        
+                                                    </span>
+                                                    </strong>
+                                                </span>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                    </table>
+
+
+                                </div>
+
+                                
+
+                                </div>
+
+                            </div>
+
+                            </div>    
+                            
+                            <hr>
+
+                        </div>
+                        </div>
+                        
+                    </div>
+            </div> 
+
+        </div>  
+
+    </div>  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script src="calc_sh_t2.js"></script>
+   </body>
+</html>
